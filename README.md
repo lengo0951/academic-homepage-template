@@ -1,6 +1,6 @@
 # Scientist Homepage Template
 
-A minimal, hybrid academic personal site inspired by [yuanxzhang.github.io](https://yuanxzhang.github.io/) and [zwq2018.github.io](https://zwq2018.github.io/).
+A minimal, hybrid academic personal site
 
 > Plain HTML5 + CSS3 + vanilla JS. **No build step.** Push to `<username>.github.io` and it's live.
 
