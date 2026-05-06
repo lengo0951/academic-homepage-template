@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" role="img" aria-label="Publication thumbnail placeholder">
+  <rect width="320" height="200" fill="#1e4ba0"/>
+  <g stroke="#ffffff" stroke-width="1.2" fill="none" opacity="0.55">
+    <circle cx="160" cy="100" r="20"/>
+    <circle cx="160" cy="100" r="38"/>
+    <circle cx="160" cy="100" r="56"/>
+    <circle cx="160" cy="100" r="74"/>
+    <path d="M30 160 Q 80 80 160 100 T 290 60"/>
+    <path d="M30 130 Q 90 120 160 100 T 290 90"/>
+  </g>
+  <text x="20" y="30" font-family="ui-sans-serif, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#ffffff" opacity="0.95">Fig 1 · placeholder</text>
+</svg>

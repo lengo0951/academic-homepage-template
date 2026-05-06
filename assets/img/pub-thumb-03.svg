@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" role="img" aria-label="Publication thumbnail placeholder">
+  <rect width="320" height="200" fill="#0d8f6c"/>
+  <g fill="#ffffff" opacity="0.6">
+    <rect x="40" y="60" width="32" height="100" rx="3"/>
+    <rect x="84" y="40" width="32" height="120" rx="3"/>
+    <rect x="128" y="80" width="32" height="80" rx="3"/>
+    <rect x="172" y="50" width="32" height="110" rx="3"/>
+    <rect x="216" y="30" width="32" height="130" rx="3"/>
+    <rect x="260" y="70" width="32" height="90" rx="3"/>
+  </g>
+  <line x1="40" y1="160" x2="292" y2="160" stroke="#ffffff" stroke-width="1.2" opacity="0.8"/>
+  <text x="20" y="30" font-family="ui-sans-serif, Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#ffffff" opacity="0.95">Fig 3 · placeholder</text>
+</svg>

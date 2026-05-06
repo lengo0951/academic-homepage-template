@@ -1,0 +1,40 @@
+name: Hydrate from ORCID
+
+on:
+  schedule:
+    - cron: '0 6 * * *'      # daily 06:00 UTC = 13:00 GMT+7
+  workflow_dispatch: {}        # manual "Run workflow" button
+
+permissions:
+  contents: write              # bot needs to push commits to main
+
+concurrency:
+  group: hydrate-orcid
+  cancel-in-progress: false
+
+jobs:
+  hydrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run hydrator
+        run: node scripts/hydrate-from-orcid.mjs
+
+      - name: Commit & push if changed
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name  "github-actions[bot]"
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "::notice::No ORCID changes — nothing to commit."
+            exit 0
+          fi
+          git commit -m "chore: sync publications from ORCID [skip ci]"
+          git push

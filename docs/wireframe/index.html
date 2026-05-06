@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jane Doe — PhD Candidate</title>
+  <meta name="description" content="Jane Doe — PhD Candidate at Stanford University. Research on machine learning, optimization, and scientific computing." />
+
+  <!-- Theme initialization (no-flash): runs before stylesheet paints -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefers = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        var theme = stored || prefers;
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) { /* localStorage blocked — fall through to media query in CSS */ }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Primary">
+      <a href="#top" class="nav-brand" aria-label="Home">JD</a>
+
+      <div class="nav-links" role="list">
+        <a href="#about" role="listitem">About</a>
+        <a href="#news" role="listitem">News</a>
+        <a href="#publications" role="listitem">Publications</a>
+        <a href="#experience" role="listitem">Experience</a>
+        <a href="#honors" role="listitem">Honors</a>
+        <a href="#services" role="listitem">Services</a>
+        <a href="#contact" role="listitem">Contact</a>
+      </div>
+
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+        <!-- Sun icon (visible in dark mode) -->
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <!-- Moon icon (visible in light mode) -->
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================ HERO ============================ -->
+    <section id="top" class="hero" aria-label="Introduction">
+      <img class="hero-photo"
+           src="https://placehold.co/360x360/e3dfd6/5a6068?font=source-sans-pro&text=Photo"
+           alt="Portrait of Jane Doe"
+           width="180" height="180" />
+
+      <div class="hero-content">
+        <h1 class="hero-name">Jane Doe</h1>
+        <p class="hero-title">PhD Candidate · Computer Science</p>
+        <p class="hero-affiliation">Stanford University, USA</p>
+        <p class="hero-bio">
+          I work on machine learning for scientific discovery, with a focus on
+          optimization, generative models, and the geometry of learned
+          representations. Previously at MIT CSAIL.
+        </p>
+
+        <ul class="social-row" aria-label="Contact and profiles">
+          <li>
+            <a href="mailto:jane@stanford.edu" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://scholar.google.com/" target="_blank" rel="noopener" aria-label="Google Scholar">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2 1 9l11 7 9-5.73V17h2V9zm0 13.5L4 11v3.94L12 20l8-5.06V11z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.18c-3.2.7-3.87-1.36-3.87-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.55-.29-5.24-1.27-5.24-5.66 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.97 10.97 0 0 1 5.74 0c2.19-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.75.12 3.04.73.8 1.18 1.82 1.18 3.07 0 4.4-2.69 5.36-5.25 5.65.41.36.78 1.07.78 2.16v3.21c0 .31.21.66.79.55C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://orcid.org/" target="_blank" rel="noopener" aria-label="ORCID">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zM7.37 17.49H5.83V7.37h1.54zm-.77-11.4a.94.94 0 1 1 0-1.88.94.94 0 0 1 0 1.88zm12.92 7.04c0 2.4-1.76 4.36-4.46 4.36h-3.74V7.37h3.74c2.7 0 4.46 1.96 4.46 4.32zm-1.56 0c0-1.56-1-2.86-2.9-2.86h-2.18v5.76h2.18c1.9 0 2.9-1.34 2.9-2.9z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45C23.21 24 24 23.23 24 22.28V1.72C24 .77 23.21 0 22.22 0z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.semanticscholar.org/" target="_blank" rel="noopener" aria-label="Semantic Scholar">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5V21h16"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================ ABOUT ============================ -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="section-heading">About</h2>
+      <p>
+        I am a fourth-year PhD candidate in Computer Science at Stanford
+        University, advised by Prof. John Smith. My research lies at the
+        intersection of <strong>machine learning</strong>, <strong>numerical
+        optimization</strong>, and <strong>scientific computing</strong>. I am
+        particularly interested in how learned representations encode physical
+        structure, and how that structure can be leveraged for sample-efficient
+        generalization.
+      </p>
+      <p>
+        Before Stanford I completed my bachelor's at MIT, where I worked with
+        the CSAIL Learning &amp; Inference group on graph neural networks for
+        molecular property prediction. I have spent summers as a research
+        intern at Google DeepMind and Meta AI Research.
+      </p>
+      <p class="meta">
+        <strong>Keywords:</strong> machine learning · optimization · generative
+        models · scientific ML · representation learning
+      </p>
+    </section>
+
+    <!-- ============================ NEWS ============================ -->
+    <section id="news" aria-labelledby="news-heading">
+      <h2 id="news-heading" class="section-heading">News</h2>
+      <ul class="news-list">
+        <li><span class="news-date">[Apr 2026]</span><span>One paper accepted to <em>ICML 2026</em>. See you in Vienna!</span></li>
+        <li><span class="news-date">[Mar 2026]</span><span>Invited talk at the <a href="#">Stanford ML Lunch</a> on geometric priors in diffusion models.</span></li>
+        <li><span class="news-date">[Feb 2026]</span><span>Released <a href="#">code</a> and <a href="#">dataset</a> for our NeurIPS 2025 paper.</span></li>
+        <li><span class="news-date">[Jan 2026]</span><span>Started a research internship at Google DeepMind.</span></li>
+        <li><span class="news-date">[Nov 2025]</span><span>Two papers accepted to <em>NeurIPS 2025</em> (one Spotlight).</span></li>
+        <li><span class="news-date">[Sep 2025]</span><span>Awarded the Stanford Graduate Fellowship.</span></li>
+      </ul>
+      <p class="news-more"><a href="#news">See all news →</a></p>
+    </section>
+
+    <!-- ========================= PUBLICATIONS ========================= -->
+    <section id="publications" aria-labelledby="pub-heading">
+      <h2 id="pub-heading" class="section-heading">Selected Publications</h2>
+      <p class="meta">
+        <span aria-label="equal contribution">*</span> equal contribution &nbsp;·&nbsp;
+        <span aria-label="corresponding author">✉</span> corresponding author &nbsp;·&nbsp;
+        Full list on <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>.
+      </p>
+
+      <div class="pub-filter" role="tablist" aria-label="Filter publications by year">
+        <button class="pub-filter-btn is-active" type="button" data-year="all" role="tab" aria-selected="true">All</button>
+        <button class="pub-filter-btn" type="button" data-year="2026" role="tab" aria-selected="false">2026</button>
+        <button class="pub-filter-btn" type="button" data-year="2025" role="tab" aria-selected="false">2025</button>
+        <button class="pub-filter-btn" type="button" data-year="2024" role="tab" aria-selected="false">2024</button>
+      </div>
+
+      <!-- 2026 -->
+      <h3 class="pub-year">2026</h3>
+      <article class="pub" data-year="2026">
+        <img class="pub-thumb" src="https://placehold.co/320x200/1e4ba0/ffffff?text=Fig+1" alt="Paper figure thumbnail" />
+        <div class="pub-body">
+          <h4 class="pub-title">Geometric Priors for Diffusion Models on Riemannian Manifolds</h4>
+          <p class="pub-authors"><strong>Jane Doe</strong>*, Alice Wang*, Bob Chen, John Smith ✉</p>
+          <p class="pub-venue"><em>International Conference on Machine Learning (ICML)</em>, 2026</p>
+          <ul class="badge-row" aria-label="Paper links">
+            <li><a class="badge badge-arxiv" href="#">arXiv</a></li>
+            <li><a class="badge badge-pdf" href="#">PDF</a></li>
+            <li><a class="badge badge-code" href="#">Code</a></li>
+            <li><a class="badge badge-project" href="#">Project</a></li>
+            <li><a class="badge badge-bibtex" href="#">BibTeX</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 2025 -->
+      <h3 class="pub-year">2025</h3>
+      <article class="pub" data-year="2025">
+        <img class="pub-thumb" src="https://placehold.co/320x200/b31b1b/ffffff?text=Fig+2" alt="Paper figure thumbnail" />
+        <div class="pub-body">
+          <span class="pub-badge-flag">Spotlight</span>
+          <h4 class="pub-title">Scalable Implicit Neural Representations for Multiscale Physical Systems</h4>
+          <p class="pub-authors"><strong>Jane Doe</strong>, Carla Rossi, John Smith ✉</p>
+          <p class="pub-venue"><em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2025</p>
+          <ul class="badge-row" aria-label="Paper links">
+            <li><a class="badge badge-arxiv" href="#">arXiv</a></li>
+            <li><a class="badge badge-pdf" href="#">PDF</a></li>
+            <li><a class="badge badge-code" href="#">Code</a></li>
+            <li><a class="badge badge-hf" href="#">HF Dataset</a></li>
+            <li><a class="badge badge-slides" href="#">Slides</a></li>
+            <li><a class="badge badge-bibtex" href="#">BibTeX</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="pub" data-year="2025">
+        <img class="pub-thumb" src="https://placehold.co/320x200/0d8f6c/ffffff?text=Fig+3" alt="Paper figure thumbnail" />
+        <div class="pub-body">
+          <h4 class="pub-title">Sample-Efficient Bayesian Optimization via Meta-Learned Acquisition Functions</h4>
+          <p class="pub-authors">Alice Wang, <strong>Jane Doe</strong>, John Smith ✉</p>
+          <p class="pub-venue"><em>Journal of Machine Learning Research (JMLR)</em>, 2025</p>
+          <ul class="badge-row" aria-label="Paper links">
+            <li><a class="badge badge-arxiv" href="#">arXiv</a></li>
+            <li><a class="badge badge-pdf" href="#">PDF</a></li>
+            <li><a class="badge badge-code" href="#">Code</a></li>
+            <li><a class="badge badge-bibtex" href="#">BibTeX</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 2024 -->
+      <h3 class="pub-year">2024</h3>
+      <article class="pub" data-year="2024">
+        <img class="pub-thumb" src="https://placehold.co/320x200/7a6a3f/ffffff?text=Fig+4" alt="Paper figure thumbnail" />
+        <div class="pub-body">
+          <h4 class="pub-title">On the Geometry of Gradient Descent in Overparameterized Networks</h4>
+          <p class="pub-authors"><strong>Jane Doe</strong>, John Smith ✉</p>
+          <p class="pub-venue"><em>International Conference on Learning Representations (ICLR)</em>, 2024</p>
+          <ul class="badge-row" aria-label="Paper links">
+            <li><a class="badge badge-arxiv" href="#">arXiv</a></li>
+            <li><a class="badge badge-pdf" href="#">PDF</a></li>
+            <li><a class="badge badge-code" href="#">Code</a></li>
+            <li><a class="badge badge-video" href="#">Video</a></li>
+            <li><a class="badge badge-bibtex" href="#">BibTeX</a></li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- ========================= EXPERIENCE ========================= -->
+    <section id="experience" aria-labelledby="exp-heading">
+      <h2 id="exp-heading" class="section-heading">Experience</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <h3 class="timeline-role">Research Intern</h3>
+          <p class="timeline-org">Google DeepMind <span class="timeline-loc">· Mountain View, CA</span></p>
+          <p class="timeline-date">Jan 2026 – Present</p>
+        </li>
+        <li class="timeline-item">
+          <h3 class="timeline-role">Research Intern</h3>
+          <p class="timeline-org">Meta AI Research (FAIR) <span class="timeline-loc">· Menlo Park, CA</span></p>
+          <p class="timeline-date">Jun 2024 – Sep 2024</p>
+        </li>
+        <li class="timeline-item">
+          <h3 class="timeline-role">PhD Candidate, Computer Science</h3>
+          <p class="timeline-org">Stanford University <span class="timeline-loc">· Stanford, CA</span></p>
+          <p class="timeline-date">Sep 2022 – Present</p>
+        </li>
+        <li class="timeline-item">
+          <h3 class="timeline-role">Undergraduate Researcher</h3>
+          <p class="timeline-org">MIT CSAIL <span class="timeline-loc">· Cambridge, MA</span></p>
+          <p class="timeline-date">Sep 2020 – Jun 2022</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============================ HONORS ============================ -->
+    <section id="honors" aria-labelledby="honors-heading">
+      <h2 id="honors-heading" class="section-heading">Honors &amp; Awards</h2>
+      <ul class="honor-list">
+        <li><span class="honor-year">2025</span><span>Stanford Graduate Fellowship</span></li>
+        <li><span class="honor-year">2025</span><span>NeurIPS Spotlight Paper Award</span></li>
+        <li><span class="honor-year">2024</span><span>NSF Graduate Research Fellowship</span></li>
+        <li><span class="honor-year">2022</span><span>MIT Outstanding Undergraduate Researcher Award</span></li>
+        <li><span class="honor-year">2022</span><span>Phi Beta Kappa, summa cum laude</span></li>
+      </ul>
+    </section>
+
+    <!-- ============================ SERVICES ============================ -->
+    <section id="services" aria-labelledby="serv-heading">
+      <h2 id="serv-heading" class="section-heading">Academic Services</h2>
+
+      <h3 class="services-sub">Conference Reviewing</h3>
+      <ul class="bullet-list">
+        <li>NeurIPS (2024, 2025, 2026)</li>
+        <li>ICML (2025, 2026)</li>
+        <li>ICLR (2025, 2026)</li>
+        <li>AISTATS (2025)</li>
+      </ul>
+
+      <h3 class="services-sub">Journal Reviewing</h3>
+      <ul class="bullet-list">
+        <li>Journal of Machine Learning Research (JMLR)</li>
+        <li>Transactions on Machine Learning Research (TMLR)</li>
+      </ul>
+
+      <h3 class="services-sub">Organization</h3>
+      <ul class="bullet-list">
+        <li>Co-organizer, NeurIPS 2025 Workshop on Scientific Machine Learning</li>
+        <li>Student volunteer, ICML 2024</li>
+      </ul>
+    </section>
+
+    <!-- ============================ CONTACT ============================ -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="section-heading">Contact</h2>
+      <ul class="contact-list">
+        <li><span class="contact-label">Email</span><a href="mailto:jane@stanford.edu">jane@stanford.edu</a></li>
+        <li><span class="contact-label">Office</span>Gates Computer Science Building, Room 392, 353 Jane Stanford Way, Stanford, CA 94305</li>
+        <li><span class="contact-label">Mailing list</span><a href="#">Subscribe to research updates</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>Last updated: April 2026</p>
+    <div id="visitor-counter" aria-label="Visitor counter">
+      <!-- Embed slot: paste clustrmaps / revolvermaps script here -->
+      <span class="counter-placeholder">[ visitor counter embed slot ]</span>
+    </div>
+    <p>&copy; 2026 Jane Doe · Built with HTML, CSS &amp; care · <a href="#top">Back to top ↑</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

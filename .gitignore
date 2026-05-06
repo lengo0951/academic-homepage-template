@@ -1,0 +1,64 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Local AI tooling — kept locally, not part of the template
+.claude/
+.agents/
+guide/
+CLAUDE.md
+GEMINI.md
+CHANGELOG.md
+README.boilerplate.md
+package.json
+package-lock.json
+portable-manifest.json
+
+# Internal implementation plans (not useful for forkers)
+plans/
+
+# Boilerplate noise inside docs/ — keep only design-guidelines.md + wireframe/
+docs/agent-teams-guide.md
+docs/code-standards.md
+docs/codebase-summary.md
+docs/project-overview-pdr.md
+docs/system-architecture.md
+docs/project-roadmap.md
+docs/skill-native-task.md
+docs/skills-interconnection-map.md
+docs/model-support-status.md
+docs/multimodal-*.md
+docs/imagen-*.md
+docs/image-generation-*.md
+docs/veo-*.md
+docs/statusline-*
+docs/journals/
+docs/research/
+docs/referecences/
+docs/assets/
+docs/infographics/
+
+# Boilerplate scripts — keep only hydrate-from-orcid.mjs
+scripts/eval/
+scripts/check-metadata-deletions.js
+scripts/check-skill-cross-refs.js
+scripts/commands_data.yaml
+scripts/generate-release-manifest.cjs
+scripts/prepare-release-assets.cjs
+scripts/send-discord-release.cjs
+scripts/skills_data.yaml
+scripts/win_compat.py
+
+# Temporary
+*.log
+.env
+.env.local
